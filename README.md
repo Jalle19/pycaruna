@@ -13,10 +13,11 @@ Supported features:
 
 > TODO: Publish to PyPI
 
-You can use this package by adding the following to your `requirements.txt`:
+You can use this package by adding the following to your `requirements.txt` (verify that the commit is pointing at a 
+fresh revision, the example here may not be up-to-date):
 
 ```
-git+https://github.com/Jalle19/pycaruna.git@7289352ee5f0a829c21a71f131ad34df9f3c3c24#egg=pycaruna==0.0.2
+git+https://github.com/Jalle19/pycaruna.git@51d3ee12429d68592640cb146ead71541bf14944#egg=pycaruna==1.0.0
 ```
 
 The `examples/` directory has example Python programs illustrating how to use the library.
