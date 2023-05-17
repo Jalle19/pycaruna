@@ -28,6 +28,11 @@ Please note that the authentication procedure requires a lot of HTTP requests to
 script is relatively slow. It's best to store the token produced by it and reusing that instead of doing the 
 authentication process all over again.
 
+## Related projects
+
+* [caruna-influxdb](https://github.com/Jalle19/caruna-influxdb) - a collection of scripts for ingesting your Caruna data 
+into InfluxDB
+
 ## Credits
 
 https://github.com/kimmolinna/pycaruna
