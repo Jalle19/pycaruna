@@ -33,6 +33,11 @@ authentication process all over again.
 * [caruna-influxdb](https://github.com/Jalle19/caruna-influxdb) - a collection of scripts for ingesting your Caruna data 
 into InfluxDB
 
+## Caveats
+
+* During daylight savings time changes, the API may return a duplicate datapoint (same timestamp in two consecutive 
+  data points). See https://github.com/Jalle19/pycaruna/issues/7 for more details.
+
 ## Credits
 
 https://github.com/kimmolinna/pycaruna
