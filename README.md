@@ -24,10 +24,6 @@ The `examples/` directory has example Python programs illustrating how to use th
 
 The `resources/` directory has examples of API response structures.
 
-Please note that the authentication procedure requires a lot of HTTP requests to be sent back and forth, so the 
-script is relatively slow. It's best to store the token produced by it and reusing that instead of doing the 
-authentication process all over again.
-
 ## Related projects
 
 * [caruna-influxdb](https://github.com/Jalle19/caruna-influxdb) - a collection of scripts for ingesting your Caruna data 
@@ -37,6 +33,9 @@ into InfluxDB
 
 * During daylight savings time changes, the API may return a duplicate datapoint (same timestamp in two consecutive 
   data points). See https://github.com/Jalle19/pycaruna/issues/7 for more details.
+* The authentication procedure requires a lot of HTTP requests to be sent back and forth, so the process is 
+  relatively slow. It's best to store and reuse the token produced by it instead of doing the authentication 
+  process all over again all the time.
 
 ## Credits
 
