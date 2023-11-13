@@ -1,0 +1,30 @@
+
+[project]
+name = "pycaruna"
+version = "1.0.0"
+description = "Caruna API Python implementation"
+readme = "README.md"
+authors = [
+    {name = "Sam Stenvall", email = "neggelandia@gmail.com"},
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "beautifulsoup4>=4.9",
+    "lxml>=4.6",
+    "requests>=2",
+]
+
+[project.urls]
+Homepage = "https://github.com/Jalle19/pycaruna"
+"Bug Tracker" = "https://github.com/Jalle19/pycaruna/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pycaruna"]
