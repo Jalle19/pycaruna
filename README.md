@@ -1,5 +1,7 @@
 ﻿# pycaruna
 
+[![PyPI version](https://badge.fury.io/py/pycaruna.svg)](https://badge.fury.io/py/pycaruna)
+
 Basic Python implementation for interfacing with Caruna Plus (sometimes called _Caruna+_). It supports only basic 
 methods, but enough to extract electricity usage data for further processing.
 
