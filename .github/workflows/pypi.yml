@@ -50,8 +50,7 @@ jobs:
 
   github-release:
     name: >-
-      Sign the Python distribution with Sigstore
-      and upload them to GitHub Release
+      Create GitHub release
     needs:
     - publish-to-pypi
     runs-on: ubuntu-latest
@@ -66,12 +65,6 @@ jobs:
       with:
         name: python-package-distributions
         path: dist/
-    - name: Sign the dists with Sigstore
-      uses: sigstore/gh-action-sigstore-python@v1.2.3
-      with:
-        inputs: >-
-          ./dist/*.tar.gz
-          ./dist/*.whl
     - name: Create GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
@@ -80,12 +73,9 @@ jobs:
         '${{ github.ref_name }}'
         --repo '${{ github.repository }}'
         --notes ""
-    - name: Upload artifact signatures to GitHub Release
+    - name: Upload artifacts to GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
-      # Upload to GitHub Release using the `gh` CLI.
-      # `dist/` contains the built packages, and the
-      # sigstore-produced signatures and certificates.
       run: >-
         gh release upload
         '${{ github.ref_name }}' dist/**
