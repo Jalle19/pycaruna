@@ -1,5 +1,8 @@
 # Change log
 
+## 1.0.2
+* First version published on PyPI
+
 ## 1.0.1
 * Fix authentication flow (https://github.com/Jalle19/pycaruna/pull/10, thanks to @jerop and @kimmolinna)
 * Replace `setup.py` with `pyproject.toml` (https://github.com/Jalle19/pycaruna/pull/11)
