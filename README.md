@@ -11,12 +11,11 @@ Supported features:
 
 ## Usage
 
-> TODO: Publish to PyPI
-
-You can use this package by adding the following to your `requirements.txt`:
+The project is published on PyPI: https://pypi.org/project/pycaruna/ . You can use this package by adding the 
+following to your `requirements.txt`:
 
 ```
-pycaruna @ git+https://github.com/Jalle19/pycaruna
+pycaruna
 ```
 
 The `examples/` directory has example Python programs illustrating how to use the library.
