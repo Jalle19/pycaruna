@@ -38,7 +38,7 @@ class Authenticator:
         # JavaScript.
         c = r.content
         soup = BeautifulSoup(c, 'lxml')
-        action = "/wicket/page?3-1.0-userIDPanel-usernameLogin-loginWithUserID"
+        action = "/login?2-1.0-userIDPanel-usernameLogin-loginWithUserID"
 
         # Build form variables (all hidden variables must always be included)
         svars = utils.get_hidden_form_vars(soup)
