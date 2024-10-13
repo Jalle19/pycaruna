@@ -1,5 +1,8 @@
 # Change log
 
+## 1.0.3
+* Fix authentication flow (https://github.com/Jalle19/pycaruna/pull/14, thanks to @jarmoruuth)
+
 ## 1.0.2
 * First version published on PyPI
 
